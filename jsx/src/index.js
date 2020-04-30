@@ -4,13 +4,11 @@ import ReactDOM from 'react-dom';
 
 // Create a React Component
 const App = () => {
-    return(
+    return (
         <div>Hi there!</div>
     )
 }
 
-ReactDOM.render(
-    <App/>, 
-    document.querySelector('#root')
-)
 // Take the reacct component and show it on the screen
+
+ReactDOM.render(<App />, document.querySelector('#root'))
