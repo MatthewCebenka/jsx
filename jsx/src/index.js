@@ -1,14 +1,20 @@
 // Import the React and ReacatDOM libraries
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
 // Create a React Component
 const App = () => {
-    return (
-        <div>Hi there!</div>
-    )
-}
+  return (
+    <div>
+      <label className="label" for="name">
+        Enter Name:
+      </label>
+      <input id="name" type="text" />
+      <button style={{backgroundColor: 'blue', color: 'white'}}>Submit</button>
+    </div>
+  );
+};
 
 // Take the reacct component and show it on the screen
 
-ReactDOM.render(<App />, document.querySelector('#root'))
+ReactDOM.render(<App />, document.querySelector("#root"));
